@@ -12,6 +12,6 @@ def numpy_task03(txtfile):
         txtarray = np.loadtxt(txtfile)
         arrmean = int(np.mean(txtarray))
         stddev = int(np.std(txtarray))
-        return (arrmean ,stddev)
-    except Exception as excep:
+        return (arrmean, stddev)
+    except Exception:
         raise
