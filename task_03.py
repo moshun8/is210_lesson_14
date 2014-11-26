@@ -10,8 +10,10 @@ def numpy_task03(txtfile):
     """Returns tuple of txt file mean and standard deviation"""
     try:
         txtarray = np.loadtxt(txtfile)
-        arrmean = int(np.mean(txtarray))
-        stddev = int(np.std(txtarray))
+        arrmean = int(txtarray.mean())
+        stddev = int(txtarray.std())
         return (arrmean, stddev)
     except Exception:
         raise
+
+# print numpy_task03('data.txt')
